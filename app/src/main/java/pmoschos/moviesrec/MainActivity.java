@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void fetchMovieRecommendations(String userId) {
         RequestQueue requestQueue = Volley.newRequestQueue(MainActivity.this);
-        String url = "https://movies-rec.onrender.com/api/user_id/" + userId;
+        String url = "https://prosmeli.pythonanywhere.com/api/user_id/" + userId;
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null,
                 response -> {
